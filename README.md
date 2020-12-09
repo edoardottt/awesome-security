@@ -22,7 +22,6 @@ Thanks to all [contributors](https://github.com/sbilly/awesome-security/graphs/c
     - [Firewall](#firewall)
     - [Anti-Spam](#anti-spam)
     - [Docker](#docker-images-for-penetration-testing--security)
-  - [Red Team Infrastructure Deployment](#red-team-infrastructure-deployment)
   - [Endpoint](#endpoint)
     - [Anti-Virus / Anti-Malware](#anti-virus--anti-malware)
     - [Content Disarm & Reconstruct](#content-disarm--reconstruct)
@@ -37,6 +36,8 @@ Thanks to all [contributors](https://github.com/sbilly/awesome-security/graphs/c
     - [Scanning / Pentesting](#scanning--pentesting-1)
     - [Runtime Application Self-Protection](#runtime-application-self-protection)
     - [Development](#development)
+  - [Red Team Infrastructure Deployment](#red-team-infrastructure-deployment)
+  - [Exploits & Payloads](#exploits--payloads)
   - [Usability](#usability)
   - [Big Data](#big-data)
   - [DevOps](#devops)
@@ -145,7 +146,7 @@ Thanks to all [contributors](https://github.com/sbilly/awesome-security/graphs/c
 - [PFQ](https://github.com/pfq/PFQ) - PFQ is a functional networking framework designed for the Linux operating system that allows efficient packets capture/transmission (10G and beyond), in-kernel functional processing and packets steering across sockets/end-points.
 - [PF_RING](http://www.ntop.org/products/packet-capture/pf_ring/) - PF_RING is a new type of network socket that dramatically improves the packet capture speed.
 - [PF_RING ZC (Zero Copy)](http://www.ntop.org/products/packet-capture/pf_ring/pf_ring-zc-zero-copy/) - PF_RING ZC (Zero Copy) is a flexible packet processing framework that  allows you to achieve 1/10 Gbit line rate packet processing (both RX and TX) at any packet size. It implements zero copy operations including patterns for inter-process and inter-VM (KVM) communications.
-- [PACKET_MMAP/TPACKET/AF_PACKET](http://lxr.free-electrons.com/source/Documentation/networking/packet_mmap.txt) - It's fine to use PACKET_MMAP to improve the performance of the capture and transmission process in Linux.
+- [PACKET_MMAP/TPACKET/AF_PACKET](https://elixir.bootlin.com/linux/latest/source/Documentation/networking/packet_mmap.rst) - It's fine to use PACKET_MMAP to improve the performance of the capture and transmission process in Linux.
 - [netmap](http://info.iet.unipi.it/~luigi/netmap/) - netmap is a framework for high speed packet I/O. Together with its companion VALE software switch, it is implemented as a single kernel module and available for FreeBSD, Linux and now also Windows.
 
 ### Firewall
@@ -157,6 +158,7 @@ Thanks to all [contributors](https://github.com/sbilly/awesome-security/graphs/c
 - [Spam Scanner](https://github.com/spamscanner) - Anti-Spam Scanning Service and Anti-Spam API by [@niftylettuce](https://github.com/niftylettuce).
 - [rspamd](https://github.com/rspamd/rspamd) - Fast, free and open-source spam filtering system.
 - [SpamAssassin](https://spamassassin.apache.org/) - A powerful and popular email spam filter employing a variety of detection technique.
+- [Scammer-List](https://scammerlist.now.sh/) - A free open source AI based Scam and Spam Finder with a free API
 
 
 ### Docker Images for Penetration Testing & Security
@@ -253,6 +255,7 @@ Thanks to all [contributors](https://github.com/sbilly/awesome-security/graphs/c
 ### Organization
 
 - [OWASP](http://www.owasp.org) - The Open Web Application Security Project (OWASP) is a 501(c)(3) worldwide not-for-profit charitable organization focused on improving the security of software.
+- [Portswigger](https://portswigger.net) - PortSwigger offers tools for web application security, testing & scanning. Choose from a wide range of security tools & identify the very latest vulnerabilities.
 
 ### Web Application Firewall
 
@@ -293,6 +296,12 @@ Provided data: IPv4 hosts, sub/domains/whois, ports/banners/protocols, technolog
 - [Checkov](https://github.com/bridgecrewio/checkov/) - A static analysis tool for infrastucture as code (Terraform).
 - [Insider CLI](https://github.com/insidersec/insider) - A open source Static Application Security Testing tool (SAST) written in GoLang for Java (Maven and Android), Kotlin (Android), Swift (iOS), .NET Full Framework, C# and Javascript (Node.js).
 
+## Exploits & Payloads
+
+- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) - A list of useful payloads and bypass for Web Application Security and Pentest/CTF
+
+
+
 ## Red Team Infrastructure Deployment
 
 - [Redcloud](https://github.com/khast3x/Redcloud) - A automated Red Team Infrastructure deployement using Docker.
@@ -317,6 +326,7 @@ Provided data: IPv4 hosts, sub/domains/whois, ports/banners/protocols, technolog
 
 - [Securing DevOps](https://manning.com/books/securing-devops) - A book on Security techniques for DevOps that reviews state of the art practices used in securing web applications and their infrastructure.
 - [ansible-os-hardening](https://github.com/dev-sec/ansible-os-hardening) - Ansible role for OS hardening
+- [bunkerized-nginx](https://github.com/bunkerity/bunkerized-nginx) - nginx Docker image secure by default
 
 ## Operating Systems
 
@@ -324,11 +334,12 @@ Provided data: IPv4 hosts, sub/domains/whois, ports/banners/protocols, technolog
 
 - [Qubes OS](https://www.qubes-os.org/) - Qubes OS is a free and open-source security-oriented operating system meant for single-user desktop computing.
 - [Whonix](https://www.whonix.org) - Operating System designed for anonymity.
+- [Tails OS](https://tails.boum.org/) - Tails is a portable operating system that protects against surveillance and censorship. 
 
 ### Online resources
 
 - [Security related Operating Systems @ Rawsec](http://rawsec.ml/en/security-related-os/) - Complete list of security related operating systems
-- [Best Linux Penetration Testing Distributions @ CyberPunk](https://n0where.net/best-linux-penetration-testing-distributions/) - Description of main penetration testing distributions
+- [Best Linux Penetration Testing Distributions @ CyberPunk](https://www.cyberpunk.rs/category/pentest-linux-distros) - Description of main penetration testing distributions
 - [Security @ Distrowatch](http://distrowatch.com/search.php?category=Security) - Website dedicated to talking about, reviewing and keeping up to date with open source operating systems
 - [Hardening Windows 10](https://www.hardenwindows10forsecurity.com/) - Guide for hardening Windows 10
 
@@ -356,6 +367,8 @@ Provided data: IPv4 hosts, sub/domains/whois, ports/banners/protocols, technolog
 - [How to Hack Like a Legend](https://amzn.to/2uWh1Up) - A hacker’s tale breaking into a secretive offshore company, Sparc Flow, 2018  
 - [How to Investigate Like a Rockstar](https://books2read.com/u/4jDWoZ) - Live a real crisis to master the secrets of forensic analysis, Sparc Flow, 2017
 - [Real World Cryptography](https://www.manning.com/books/real-world-cryptography) - This early-access book teaches you applied cryptographic techniques to understand and apply security at every level of your systems and applications.
+- [AWS Security](https://www.manning.com/books/aws-security?utm_source=github&utm_medium=organic&utm_campaign=book_shields_aws_1_31_20) - This early-access book covers commong AWS security issues and best practices for access policies, data protection, auditing, continuous monitoring, and incident response.
+- [The Art of Network Penetration Testing](https://www.manning.com/books/the-art-of-network-penetration-testing) - Book that is a hands-on guide to running your own penetration test on an enterprise network. (early access, published continuously, final release December 2020)
 
 ## Other Awesome Lists
 
